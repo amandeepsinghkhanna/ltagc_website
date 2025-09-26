@@ -1,0 +1,17 @@
+/* Custom styles to complement Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style for the accordion content to have a smooth transition */
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px; /* Adjust as needed for content height */
+}
